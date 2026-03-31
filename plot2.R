@@ -3,6 +3,7 @@ library(data.table)
 df <- fread("./data/feb_household.csv")
 df <- df[, -1]
 
+# Create and save the plot as PNG file
 png(filename = "plot2.png")
 par(mar = c(5.1, 5.1, 4.1, 2.1))
 dates_vec <- as.POSIXct(c("2007-02-01", "2007-02-02", "2007-02-03"), tz="UTC")
