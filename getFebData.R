@@ -1,5 +1,5 @@
 # Get the February data from the large data file
-#  Assumes you have the file "housefold_power_consumption.txt" in data directory
+#  Assumes you have the file "household_power_consumption.txt" in data directory
 library(data.table)
 df <- fread("./data/household_power_consumption.txt", sep=";", na.strings = c("?"))
 library(lubridate)
